@@ -9,9 +9,9 @@ import { Hero } from "@/components/Hero";
 // import { Footer } from "@/components/Footer";
 export const Portfolio = () => {
   return (
-    <>
+    <div className="max-w-[1440px] m-auto">
       <Header />
       <Hero />
-    </>
+    </div>
   );
 };
