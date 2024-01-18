@@ -1,5 +1,5 @@
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
+import React from "react";
+import { Header, Hero, About, Skills } from "@/components/index";
 // import { Hero } from "@/components/Hero";
 // import { About } from "@/components/About";
 // import { Skills } from "@/components/Skills";
@@ -7,11 +7,14 @@ import { Hero } from "@/components/Hero";
 // import { Work } from "@/components/Work";
 // import { Contant } from "@/components/Contant";
 // import { Footer } from "@/components/Footer";
-export const Portfolio = () => {
+const Portfolio = () => {
   return (
     <div className="max-w-[1440px] m-auto">
       <Header />
       <Hero />
+      <About />
+      <Skills />
     </div>
   );
 };
+export default Portfolio;

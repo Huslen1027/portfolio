@@ -1,3 +1,4 @@
+import React from "react";
 export const Hero = () => {
   return (
     <div className="hero flex max-w-screen-xl mx-auto  px-16 py-24">
@@ -50,17 +51,16 @@ export const Hero = () => {
         <div className="littlehero2 flex flex-col justify-center items-end  min-w-96 ">
           <div className="absolute z-10 mr-[30px] ">
             <img
-              className="border-solid border-[white] border-[8px] w-[280px] h-[300px]"
+              className="border-solid border-[white] border-[8px] w-[300px] h-[300px]"
               src="/alexa-demi-euphoria.jpg"
               alt=""
-              width={280}
+              width={300}
               height={300}
             />
           </div>
-          <div className="w-[280px] h-[300px]  ml-[30px] mt-[60px]  bg-gray-200"></div>
+          <div className="w-[300px] h-[300px]  ml-[30px] mt-[60px]  bg-gray-200"></div>
         </div>
       </div>
     </div>
   );
 };
-export default Hero;

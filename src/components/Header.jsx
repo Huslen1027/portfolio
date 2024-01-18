@@ -1,3 +1,4 @@
+import React from "react";
 export const Header = () => {
   return (
     <div className="Header flex mx-auto max-w-screen-xl px-16 py-4  justify-between items-center ">
@@ -33,4 +34,3 @@ export const Header = () => {
     </div>
   );
 };
-export default Header;
