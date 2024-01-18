@@ -15,7 +15,7 @@ export const About = () => {
             <div className="image absolute z-10 mr-[30px]">
               <img
                 className="w-[400px] h-[480px] border-solid border-[white] border-[8px]"
-                src="/aboutguy.png "
+                src="/alexa.webp "
                 alt=""
                 width={400}
                 height={480}
@@ -88,4 +88,3 @@ export const About = () => {
     </div>
   );
 };
-export default About;

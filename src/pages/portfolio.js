@@ -1,12 +1,15 @@
 import React from "react";
-import { Header, Hero, About, Skills } from "@/components/index";
-// import { Hero } from "@/components/Hero";
-// import { About } from "@/components/About";
-// import { Skills } from "@/components/Skills";
-// import { Experience } from "@/components/Experience";
-// import { Work } from "@/components/Work";
-// import { Contant } from "@/components/Contant";
-// import { Footer } from "@/components/Footer";
+import {
+  Header,
+  Hero,
+  About,
+  Skills,
+  Experience,
+  Work,
+  Contant,
+  Footer,
+} from "@/components/index";
+
 const Portfolio = () => {
   return (
     <div className="max-w-[1440px] m-auto">
@@ -14,6 +17,10 @@ const Portfolio = () => {
       <Hero />
       <About />
       <Skills />
+      <Experience />
+      <Work />
+      <Contant />
+      <Footer />
     </div>
   );
 };
