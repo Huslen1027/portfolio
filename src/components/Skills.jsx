@@ -24,7 +24,7 @@ export const Skills = () => {
           className="flex items-start gap-[48px]  flex-wrap w-[100%]
          h-[248px]"
         >
-          <div className="flex justify-between items-center  w-[100%]">
+          <div className="flex justify-between items-center  w-[100%] object-scale-down">
             {skillsIcon1.map((element) => (
               <div className="flex flex-col justify-center items-center gap-2 ">
                 {<Image src={element.icon} width={64} height={64} />}
@@ -32,7 +32,7 @@ export const Skills = () => {
               </div>
             ))}
           </div>
-          <div className="flex justify-between items-center w-[100%]">
+          <div className="flex justify-between items-center w-[100%] object-scale-down">
             {skillsIcon2.map((element) => (
               <div className="flex flex-col justify-center items-center gap-2">
                 {<Image src={element.icon} width={64} height={64} />}
