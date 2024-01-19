@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <div className="about flex py-24 px-20 justify-between items-center bg-gray-50">
-      <div className="container flex flex-col gap-22 items-center">
+      <div className="container flex flex-col gap-22 items-center ">
         <div className="row1 flex flex-col gap-4 items-start border rounded-xl bg-gray-600 mb-[30px]">
           <div className="row flex flex-col justify-center items-center ">
             <p className="flex py-1 px-5 justify-center items-center bg-gray-200 border rounded-xl ">

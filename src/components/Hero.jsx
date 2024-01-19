@@ -1,13 +1,11 @@
 import React from "react";
 export const Hero = () => {
   return (
-    <div className="hero flex max-w-screen-xl mx-auto  px-16 py-24">
-      <div className="container flex flex-col-reverse md:flex-row items-start justify-between  ">
+    <div className="hero flex  mx-auto  px-16 py-24">
+      <div className="container flex flex-col-reverse sm:flex-row items-start justify-between">
         <div className="littlehero1 flex items-start flex-col gap-10 self-stretch max-w-3xl justify-center">
           <div className="content">
-            <h1 className="text-6xl gray-900 font-bold">
-              Hi, I’m Alexa Demie 👋
-            </h1>
+            <h1 className="text-6xl font-bold">Hi, I’m Alexa Demie 👋</h1>
             <p className="alexaP text-sm font-normal leading-6 text-gray-600 not-italic font-sans">
               Alexa Demie is an American actress and singer. She is known for
               her role as Madeleine "Maddy" Perez on the HBO teen drama
@@ -51,7 +49,7 @@ export const Hero = () => {
         <div className="littlehero2 flex flex-col justify-center items-end  min-w-96 ">
           <div className="absolute z-10 mr-[30px] ">
             <img
-              className="border-solid border-[white] border-[8px] w-[300px] h-[300px]"
+              className=" border-solid border-[white] border-[8px] w-[300px] h-[300px]"
               src="/alexa-demi-euphoria.jpg"
               alt=""
               width={300}
