@@ -1,11 +1,12 @@
 import React from "react";
 export const Header = () => {
   return (
-    <div className=" flex p-4 justify-between items-center sm:flex mx-auto  px-16 py-4 sm:justify-between sm:items-center">
-      <div className="max-w-[93px] max-h-[36px] flex justify-between items-center sm:container sm:flex sm:justify-between ">
-        <div className=" flex justify-between items-center sm:flex text-2xl font-bold">
+    <div className=" flex p-4 items-center sm:flex mx-auto  px-16 py-4 sm:justify-between sm:items-center ">
+      <div className=" flex justify-between items-center sm:container sm:flex sm:justify-between">
+        <div className=" flex justify-between items-center sm:flex text-2xl font-bold w-[350px] h-[68px]">
           <h1 className=" sm:text-black text-2xl  font-bold">&#60;SS/&#62;</h1>
           <svg
+            className="sm:hidden"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -37,16 +38,16 @@ export const Header = () => {
         </div>
 
         <div className=" sm:flex gap-6 justify-center items-center text-base font-medium hidden">
-          <a className="text-gray-600" href="#">
+          <a className="text-gray-600" href="#section3">
             About
           </a>
-          <a className="text-gray-600" href="#">
+          <a className="text-gray-600" href="#section4">
             Work
           </a>
-          <a className="text-gray-600" href="#">
+          <a className="text-gray-600" href="#section5">
             Testimonials
           </a>
-          <a className="text-gray-600" href="#">
+          <a className="text-gray-600" href="#section6">
             Contant
           </a>
           <div className="actions flex gap-4 justify-center items-center">

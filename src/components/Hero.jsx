@@ -46,7 +46,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="littlehero2 flex flex-col justify-center items-end  min-w-96 ">
+        <div className="littlehero2 sm:flex flex-col sm:justify-center min-w-96 flex items-center justify-center ">
           <div className="absolute z-10 mr-[30px] ">
             <img
               className=" border-solid border-[white] border-[8px] w-[300px] h-[300px]"
