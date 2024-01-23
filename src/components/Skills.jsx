@@ -2,10 +2,17 @@ import React from "react";
 import { skillsIcon1 } from "@/utils/dummyData";
 import { skillsIcon2 } from "@/utils/dummyData";
 import Image from "next/image";
+import { useTheme } from "@/context/ThemeContext";
 export const Skills = () => {
+  const { theme } = useTheme();
+  const divClassName =
+    theme == "light"
+      ? "bg-[#FFF] py-[96px] px-[80px]"
+      : "bg-[#030712] py-[96px] px-[80px]";
+  const pClassName = theme == "light" ? "text-#4B5563)" : "text-[#D1D5DB]";
   return (
     <div className="skills flex px-[80px] py-[96px] flex-col justify-center">
-      <div className="container flex flex-col px-[32px] gap-12  ">
+      <div className=" max-w-[1440px] m-auto  container flex flex-col px-[32px] gap-12  ">
         <div className="flex flex-col gap-4 w-[1216px] h-[72px]">
           <div className="flex flex-col items-center justify-center">
             <button className="flex py-1 px-5 justify-center items-center rounded-xl bg-gray-200">
@@ -15,7 +22,9 @@ export const Skills = () => {
             </button>
           </div>
           <div className="flex flex-col justify-center  items-center ">
-            <p className="text-lg leading-7 text-gray-600 font-normal">
+            <p
+              className={`${pClassName}text-lg leading-7 text-gray-600 font-normal`}
+            >
               The skills, tools and technologies I am really good at:
             </p>
           </div>

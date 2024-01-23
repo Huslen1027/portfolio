@@ -1,10 +1,31 @@
 import React from "react";
-export const Header = () => {
+
+import { useTheme } from "../context/ThemeContext";
+
+export function Header() {
+  const { theme, setTheme } = useTheme();
+
+  const changeThemeHandler = () => {
+    setTheme(theme === "light" ? "dark <Moon/>" : "light");
+  };
+  const divClassName = theme == "light" ? "bg-white" : "bg-black ";
   return (
-    <div className=" flex p-4 items-center sm:flex mx-auto  px-16 py-4 sm:justify-between sm:items-center ">
-      <div className=" flex justify-between items-center sm:container sm:flex sm:justify-between">
-        <div className=" flex justify-between items-center sm:flex text-2xl font-bold w-[350px] h-[68px]">
-          <h1 className=" sm:text-black text-2xl  font-bold">&#60;SS/&#62;</h1>
+    <div className={divClassName}>
+      <div className=" max-w-[1440px] m-auto  flex justify-between items-center sm:container sm:flex sm:justify-between">
+        <div
+          className={`${
+            theme == "light"
+              ? "bg-white flex justify-between items-center sm:flex text-2xl font-bold w-[350px] h-[68px]"
+              : "bg-black  flex justify-between items-center sm:flex text-2xl font-bold w-[350px] h-[68px]"
+          }`}
+        >
+          <h1
+            className={`${
+              theme == "light" ? "text-black" : "text-white"
+            } text-2xl  font-bold`}
+          >
+            &#60;SS/&#62;
+          </h1>
           <svg
             className="sm:hidden"
             xmlns="http://www.w3.org/2000/svg"
@@ -52,17 +73,29 @@ export const Header = () => {
           </a>
           <div className="actions flex gap-4 justify-center items-center">
             <img
-              src="/Icon.svg"
+              onClick={changeThemeHandler}
+              s
+              src={`${theme == "light" ? "/nar.svg" : "/sar.svg"}`}
               alt=""
               className="h-[24px] self-center pr-[16px] pl[24px] cursor-pointer"
             />
 
-            <button className="download flex px-4 py-1 items-center gap-2 justify-center rounded-xl bg-black">
-              <p className="text-gray-50">Download CV</p>
+            <button
+              className={`${
+                theme == "light"
+                  ? "bg-black download flex px-4 py-1 items-center gap-2 justify-center rounded-xl"
+                  : "bg-white download flex px-4 py-1 items-center gap-2 justify-center rounded-xl"
+              }`}
+            >
+              <p
+                className={`${theme == "light" ? "text-white" : "text-black"}`}
+              >
+                Download CV
+              </p>
             </button>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}

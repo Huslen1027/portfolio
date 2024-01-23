@@ -1,7 +1,7 @@
 export const Experience = () => {
   return (
     <div className="experience flex px[80px] py-[96px] flex-col justify-center items-center bg-gray-50 mt-[100px]">
-      <div className="container flex px-[32px] flex-col justify-center items-center ">
+      <div className="max-w-[1440px] m-auto  container flex px-[32px] flex-col justify-center items-center ">
         <div className="header flex flex-col gap-4 justify-center items-center">
           <div className="top flex flex-col items-center justify-center">
             <button className="flex px-5 py-1 justify-center items-center rounded-xl bg-gray-200">
@@ -16,7 +16,7 @@ export const Experience = () => {
             </p>
           </div>
         </div>
-        <div className="upwork flex w-[890px] px-[32px] py-[32px] flex-col bg-white rounded-xl mt-[48px]">
+        <div className="upwork flex w-[890px] px-[32px] py-[32px] flex-col bg-white rounded-xl mt-[48px]  shadow-md ">
           <div className="container flex gap-[48px]">
             <div className="flex flex-col gap-3 items-start justify-start">
               <img
@@ -51,7 +51,7 @@ export const Experience = () => {
             </div>
           </div>
         </div>
-        <div className="upwork flex w-[890px] px-[32px] py-[32px] flex-col bg-white rounded-xl mt-[48px]">
+        <div className="upwork flex w-[890px] px-[32px] py-[32px] flex-col bg-white rounded-xl mt-[48px]  shadow-md ">
           <div className="container flex gap-[48px]">
             <div className="flex flex-col gap-3 items-start justify-start">
               <img
@@ -86,7 +86,7 @@ export const Experience = () => {
             </div>
           </div>
         </div>
-        <div className="upwork flex w-[890px] px-[32px] py-[32px] flex-col bg-white rounded-xl mt-[48px]">
+        <div className="upwork flex w-[890px] px-[32px] py-[32px] flex-col bg-white rounded-xl mt-[48px]  shadow-md ">
           <div className="container flex gap-[48px]">
             <div className="flex flex-col gap-3 items-start justify-start">
               <img

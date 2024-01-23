@@ -1,12 +1,26 @@
 import React from "react";
+import { useTheme } from "@/context/ThemeContext";
 export const Hero = () => {
+  const { theme } = useTheme();
+  const divClassName =
+    theme == "light"
+      ? "bg-white py-[96px] px-[80px] "
+      : "bg-black py-[96px] px-[80px]";
+  const h1 =
+    theme == "light"
+      ? "text-black text-6xl font-bold"
+      : "text-white text-6xl font-bold";
+  const p =
+    theme == "light"
+      ? "text-gray-600 alexaP text-sm font-normal leading-6 not-italic font-sans"
+      : "text-gray-600 alexaP text-sm font-normal leading-6 not-italic font-sans";
   return (
-    <div className="hero flex  mx-auto  px-16 py-24">
-      <div className="container flex flex-col-reverse sm:flex-row items-start justify-between">
+    <div className={`${divClassName} flex justify-between`}>
+      <div className="max-w-[1440px] m-auto  container flex flex-col-reverse sm:flex-row items-start justify-between">
         <div className="littlehero1 flex items-start flex-col gap-10 self-stretch max-w-3xl justify-center">
           <div className="content">
-            <h1 className="text-6xl font-bold">Hi, I’m Alexa Demie 👋</h1>
-            <p className="alexaP text-sm font-normal leading-6 text-gray-600 not-italic font-sans">
+            <h1 className={h1}>Hi, I’m Alexa Demie 👋</h1>
+            <p className={p}>
               Alexa Demie is an American actress and singer. She is known for
               her role as Madeleine "Maddy" Perez on the HBO teen drama
               television series Euphoria. Demie made her feature film debut with

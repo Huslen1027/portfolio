@@ -1,7 +1,14 @@
+import { useTheme } from "@/context";
 export const Contant = () => {
+  const { theme } = useTheme();
+  const divClassName =
+    theme == "light"
+      ? "bg-white py-[96px] px-[80px]"
+      : "bg-black py-[96px] px-[80px]";
+  const pClassName = theme == "light" ? "text-white" : "text-black";
   return (
     <div className="contant flex px-[80px] py-[96px] flex-col items-center justify-center bg-white">
-      <div className="container flex px-[32px] justify-center flex-col gap-12 items-center ">
+      <div className="max-w-[1440px] m-auto  container flex px-[32px] justify-center flex-col gap-12 items-center ">
         <div className="header flex flex-col gap-4 ">
           <div className="top flex flex-col justify-center items-center">
             <button className="flex py-1 px-5 justify-center items-center rounded-xl bg-gray-200">

@@ -1,7 +1,11 @@
+import { useTheme } from "@/context/ThemeContext";
 export const Work = () => {
+  const { theme } = useTheme();
+  const divClassName = theme == "light" ? "bg-white" : "bg-black";
+  const pClassName = theme == "light" ? "text-white" : "text-black";
   return (
     <div className="work flex px-[80px] py-[96px] flex-col items-center justify-center ">
-      <div className="container flex px-[32px] justify-center items-center gap-12 flex-col">
+      <div className="max-w-[1440px] m-auto  container flex px-[32px] justify-center items-center gap-12 flex-col">
         <div className="header flex flex-col gap-4 justify-center items-center">
           <div className="top flex flex-col items-center justify-center">
             <button className="flex px-5 py-1 justify-center items-center rounded-xl bg-gray-200">

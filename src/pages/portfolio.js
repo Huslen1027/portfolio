@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   Header,
   Hero,
@@ -12,21 +11,19 @@ import {
 
 export const Portfolio = () => {
   return (
-    <div className={`max-w-[1440px] m-auto } `}>
+    <div className="">
       <section id="section1">
         <Header />
       </section>
       <section>
-        {" "}
         <Hero />
       </section>
 
       <section id="section3">
         <About />
       </section>
-      {/* <Skills />
+      <Skills />
       <section id="section5">
-        {" "}
         <Experience />
       </section>
 
@@ -34,11 +31,10 @@ export const Portfolio = () => {
         <Work />
       </section>
       <section id="section6">
-        {" "}
         <Contant />
       </section>
 
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
