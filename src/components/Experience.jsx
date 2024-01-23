@@ -1,22 +1,39 @@
+import { useTheme } from "@/context/ThemeContext";
 export const Experience = () => {
+  const { theme } = useTheme();
+  const divClassName = theme == "light" ? "bg-gray-50" : "bg-[#111827]";
+  const headerButtonp =
+    theme == "light"
+      ? "bg-gray-200 flex py-1 px-5 justify-center items-center border rounded-xl"
+      : "bg-[#374151] flex py-1 px-5 justify-center items-center rounded-xl text-[#D1D5DB]";
+  const p = theme == "light" ? "text-[#4B5563]" : "text-[#D1D5DB]";
+  const div = theme == "light" ? "bg-[#FFF]" : "bg-[#1F2937]";
+  const h1 =
+    theme == "light"
+      ? "text-lg font-semibold leading-7 text-gray-900"
+      : " text-lg font-semibold leading-7 text-[#F9FAFB]";
+  const pClassName = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
+
   return (
-    <div className="experience flex px[80px] py-[96px] flex-col justify-center items-center bg-gray-50 mt-[100px]">
+    <div
+      className={`${divClassName} flex px[80px] py-[96px] flex-col justify-center items-centermt-[100px]`}
+    >
       <div className="max-w-[1440px] m-auto  container flex px-[32px] flex-col justify-center items-center ">
         <div className="header flex flex-col gap-4 justify-center items-center">
           <div className="top flex flex-col items-center justify-center">
-            <button className="flex px-5 py-1 justify-center items-center rounded-xl bg-gray-200">
-              <p className="text-sm leading-5 text-gray-600 not-italic">
-                Experience
-              </p>
+            <button className={headerButtonp}>
+              <p className={`${p}text-sm leading-5 not-italic`}>Experience</p>
             </button>
           </div>
           <div className="bottom flex flex-col items-center justify-center ">
-            <p className="text-lg leading-7 text-gray-600 font-normal">
+            <p className={`${p} text-lg leading-7  font-normal`}>
               Here is a quick summary of my most recent experiences:
             </p>
           </div>
         </div>
-        <div className="upwork flex w-[890px] px-[32px] py-[32px] flex-col bg-white rounded-xl mt-[48px]  shadow-md ">
+        <div
+          className={`${div}upwork flex w-[890px] px-[32px] py-[32px] flex-col  rounded-xl mt-[48px]  shadow-md`}
+        >
           <div className="container flex gap-[48px]">
             <div className="flex flex-col gap-3 items-start justify-start">
               <img
@@ -26,9 +43,7 @@ export const Experience = () => {
               />
             </div>
             <div className="flex w-[384px] flex-col gap-4">
-              <h1 className="text-lg font-semibold leading-7 text-gray-900">
-                Sr. Frontend Developer
-              </h1>
+              <h1 className={h1}>Sr. Frontend Developer</h1>
               <ul className="flex flex-col gap-1 items-start list-disc">
                 <li className="font-normal text-base text-gray-600 loading-7">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

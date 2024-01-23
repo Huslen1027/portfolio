@@ -7,11 +7,11 @@ export const Skills = () => {
   const { theme } = useTheme();
   const divClassName =
     theme == "light"
-      ? "bg-[#FFF] py-[96px] px-[80px]"
+      ? "bg-[#FFF] py-[96px] px-[80px] flex flex-col justify-center "
       : "bg-[#030712] py-[96px] px-[80px]";
   const pClassName = theme == "light" ? "text-#4B5563)" : "text-[#D1D5DB]";
   return (
-    <div className="skills flex px-[80px] py-[96px] flex-col justify-center">
+    <div className={divClassName}>
       <div className=" max-w-[1440px] m-auto  container flex flex-col px-[32px] gap-12  ">
         <div className="flex flex-col gap-4 w-[1216px] h-[72px]">
           <div className="flex flex-col items-center justify-center">
