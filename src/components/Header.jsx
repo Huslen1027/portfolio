@@ -11,13 +11,13 @@ export function Header() {
   const divClassName = theme == "light" ? "bg-white" : "bg-black ";
   return (
     <div className={divClassName}>
-      <div className=" max-w-[1440px] m-auto  flex justify-between items-center sm:container sm:flex sm:justify-between">
+      <div className=" sm:max-w-[1440px] sm:m-auto  flex justify-between items-center sm:container sm:flex sm:justify-between">
         <div
           className={`${
             theme == "light"
-              ? "bg-white flex justify-between items-center sm:flex text-2xl font-bold w-[350px] h-[68px]"
-              : "bg-black  flex justify-between items-center sm:flex text-2xl font-bold w-[350px] h-[68px]"
-          }`}
+              ? "bg-white sm:flex text-2xl font-bold "
+              : "bg-black   sm:flex text-2xl font-bold"
+          } flex justify-between w-full px-[20px] py-[10px] `}
         >
           <h1
             className={`${
@@ -27,7 +27,7 @@ export function Header() {
             &#60;SS/&#62;
           </h1>
           <svg
-            className="sm:hidden"
+            className="sm:hidden self-center"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"

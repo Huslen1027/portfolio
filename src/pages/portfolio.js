@@ -19,22 +19,22 @@ export const Portfolio = () => {
         <Hero />
       </section>
 
-      <section id="section3">
+      {/* <section id="section3">
         <About />
-      </section>
-      <Skills />
-      <section id="section5">
+      </section> */}
+      {/* <Skills /> */}
+      {/* <section id="section5">
         <Experience />
-      </section>
+      </section> */}
 
-      <section id="section4">
+      {/* <section id="section4">
         <Work />
       </section>
       <section id="section6">
         <Contant />
       </section>
 
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

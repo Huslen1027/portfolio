@@ -1,68 +1,85 @@
+import {
+  JavascriptIcon,
+  TypescriptIcon,
+  ReactIcon,
+  NextIcon,
+  NodeIcon,
+  ExpressIcon,
+  NestIcon,
+  SocketIcon,
+  PostgreIcon,
+  MongoIcon,
+  SassIcon,
+  TailwindIcon,
+  FigmaIcon,
+  CypressIcon,
+  StorybookIcon,
+  GitIcon,
+} from "@/components/icons/icon";
 export const skillsIcon1 = [
   {
-    icon: "/icon-javscript.svg",
+    icon: <JavascriptIcon />,
     iconName: "Javascripts",
   },
   {
-    icon: "/icon-typescript.svg",
+    icon: <TypescriptIcon />,
     iconName: "Typescipt",
   },
   {
-    icon: "/icon-React.svg",
+    icon: <ReactIcon />,
     iconName: "React",
   },
   {
-    icon: "/icon-next.js.svg",
+    icon: <NextIcon />,
     iconName: "Next.js",
   },
   {
-    icon: "/icon-node.svg",
+    icon: <NodeIcon />,
     iconName: "Node.js",
   },
   {
-    icon: "/icon-express.svg",
+    icon: <ExpressIcon />,
     iconName: "Express.js",
   },
   {
-    icon: "/icon-nest.svg",
+    icon: <NestIcon />,
     iconName: "Next.js",
   },
   {
-    icon: "/icon-socket.svg",
+    icon: <SocketIcon />,
     iconName: "Socket.io",
   },
-];
-export const skillsIcon2 = [
+
   {
-    icon: "/icon-postgreSQL.svg",
+    icon: <PostgreIcon />,
     iconName: "PostgreSQL",
   },
   {
-    icon: "/icon-mongoDB.svg",
+    icon: <MongoIcon />,
     iconName: "MongoDB",
   },
   {
-    icon: "/icon-Sass.svg",
+    icon: <SassIcon />,
     iconName: "Sass/Scss",
   },
   {
-    icon: "/icon-tailwind.svg",
+    icon: <TailwindIcon />,
     iconName: "Tailwindcss",
   },
   {
-    icon: "/icon-figma.svg",
+    icon: <FigmaIcon />,
     iconName: "Figma",
   },
   {
-    icon: "/icon-cypress.svg",
+    icon: <CypressIcon />,
     iconName: "Cypress",
   },
   {
-    icon: "/icon-storybook.svg",
+    icon: <StorybookIcon />,
     iconName: "Storybook",
   },
   {
-    icon: "/icon-git.svg",
+    icon: <GitIcon />,
     iconName: "Git",
   },
 ];

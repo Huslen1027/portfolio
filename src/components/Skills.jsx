@@ -7,45 +7,36 @@ export const Skills = () => {
   const { theme } = useTheme();
   const divClassName =
     theme == "light"
-      ? "bg-[#FFF] py-[96px] px-[80px] flex flex-col justify-center "
-      : "bg-[#030712] py-[96px] px-[80px]";
-  const pClassName = theme == "light" ? "text-#4B5563)" : "text-[#D1D5DB]";
+      ? "bg-[#FFF] py-[50px] px-[16px] flex flex-col justify-center items-center "
+      : "bg-[#030712] py-[50px] px-[16px] flex flex-col justify-center items-center";
+  const pClassName = theme == "light" ? "text-[#4B5563]" : "text-[#D1D5DB]";
+  const headerButtonp =
+    theme == "light"
+      ? "bg-gray-200 flex py-1 px-5 justify-center items-center border rounded-xl"
+      : "bg-[#374151] flex py-1 px-5 justify-center items-center rounded-xl text-[#D1D5DB]";
   return (
     <div className={divClassName}>
-      <div className=" max-w-[1440px] m-auto  container flex flex-col px-[32px] gap-12  ">
-        <div className="flex flex-col gap-4 w-[1216px] h-[72px]">
+      <div className=" flex flex-col items-start  gap-6 ">
+        <div className="flex flex-col gap-4 ">
           <div className="flex flex-col items-center justify-center">
-            <button className="flex py-1 px-5 justify-center items-center rounded-xl bg-gray-200">
-              <p className="text-sm leading-5 text-gray-600 not-italic">
-                Skills
-              </p>
+            <button className={headerButtonp}>
+              <p className="text-sm leading-5  not-italic">Skills</p>
             </button>
           </div>
           <div className="flex flex-col justify-center  items-center ">
             <p
-              className={`${pClassName}text-lg leading-7 text-gray-600 font-normal`}
+              className={`${pClassName}text-lg leading-7 text-gray-600 font-normal  text-center`}
             >
               The skills, tools and technologies I am really good at:
             </p>
           </div>
         </div>
-        <div
-          className="flex items-start gap-[48px]  flex-wrap w-[100%]
-         h-[248px]"
-        >
-          <div className="flex justify-between items-center  w-[100%] object-scale-down">
+        <div className=" flex flex-col  items-start justify-center">
+          <div className="flex flex-wrap gap-10 justify-between">
             {skillsIcon1.map((element) => (
-              <div className="flex flex-col justify-center items-center gap-2 ">
-                {<Image src={element.icon} width={64} height={64} />}
-                <p>{element.iconName}</p>
-              </div>
-            ))}
-          </div>
-          <div className="flex justify-between items-center w-[100%] object-scale-down">
-            {skillsIcon2.map((element) => (
-              <div className="flex flex-col justify-center items-center gap-2">
-                {<Image src={element.icon} width={64} height={64} />}
-                <p>{element.iconName}</p>
+              <div className="flex flex-col justify-between items-center gap-2 ">
+                {element.icon}
+                <p className={pClassName}>{element.iconName}</p>
               </div>
             ))}
           </div>

@@ -4,8 +4,8 @@ export const Hero = () => {
   const { theme } = useTheme();
   const divClassName =
     theme == "light"
-      ? "bg-white py-[96px] px-[80px] "
-      : "bg-black py-[96px] px-[80px]";
+      ? "bg-white py-[46px] px-[30px] "
+      : "bg-black py-[46px] px-[30px]";
   const h1 =
     theme == "light"
       ? "text-black text-6xl font-bold"
@@ -16,7 +16,7 @@ export const Hero = () => {
       : "text-gray-600 alexaP text-sm font-normal leading-6 not-italic font-sans";
   return (
     <div className={`${divClassName} flex justify-between`}>
-      <div className="max-w-[1440px] m-auto  container flex flex-col-reverse sm:flex-row items-start justify-between">
+      <div className="max-w-[1440px] m-auto  container flex flex-col-reverse gap-[30px] sm:flex-row items-start justify-between">
         <div className="littlehero1 flex items-start flex-col gap-10 self-stretch max-w-3xl justify-center">
           <div className="content">
             <h1 className={h1}>Hi, I’m Alexa Demie 👋</h1>
@@ -60,17 +60,15 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="littlehero2 sm:flex flex-col sm:justify-center min-w-96 flex items-center justify-center ">
-          <div className="absolute z-10 mr-[30px] ">
+        <div className="littlehero2 sm:flex flex-col sm:justify-center  flex place-content-center  ">
+          <div className="absolute z-10  ml-[40px]">
             <img
-              className=" border-solid border-[white] border-[8px] w-[300px] h-[300px]"
+              className=" border-solid border-[white] border-[8px] w-[240px] h-[280px]"
               src="/alexa-demi-euphoria.jpg"
               alt=""
-              width={300}
-              height={300}
             />
           </div>
-          <div className="w-[300px] h-[300px]  ml-[30px] mt-[60px]  bg-gray-200"></div>
+          <div className="w-[260px] h-[280px]  ml-[30px] mt-[25px]  bg-gray-200 "></div>
         </div>
       </div>
     </div>
