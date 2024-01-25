@@ -5,7 +5,7 @@ export const upwork = [
     header: "Sr. Frontend Developerv",
     products: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Ut pretium arcu et massa semper, id fringilla leo semper.",
+      "Ut pretium arcu et massa semper, id fringilla leo.",
       "Sed quis justo ac magna.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     ],

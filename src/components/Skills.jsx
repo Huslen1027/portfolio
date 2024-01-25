@@ -34,7 +34,7 @@ export const Skills = () => {
         <div className=" flex flex-col  items-start justify-center">
           <div className="flex flex-wrap gap-10 justify-between">
             {skillsIcon1.map((element) => (
-              <div className="flex flex-col justify-between items-center gap-2 ">
+              <div className="flex flex-col justify-between items-center gap-1 ">
                 {element.icon}
                 <p className={pClassName}>{element.iconName}</p>
               </div>

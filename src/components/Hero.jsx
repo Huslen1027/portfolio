@@ -8,8 +8,8 @@ export const Hero = () => {
       : "bg-black py-[46px] px-[30px]";
   const h1 =
     theme == "light"
-      ? "text-black text-6xl font-bold"
-      : "text-white text-6xl font-bold";
+      ? "text-black text-4xl sm:text-6xl font-bold"
+      : "text-white text-4xl sm:text-6xl font-bold";
   const p =
     theme == "light"
       ? "text-gray-600 alexaP text-sm font-normal leading-6 not-italic font-sans"
@@ -19,7 +19,7 @@ export const Hero = () => {
       <div className="max-w-[1440px] m-auto  container flex flex-col-reverse gap-[30px] sm:flex-row items-start justify-between">
         <div className="littlehero1 flex items-start flex-col gap-10 self-stretch max-w-3xl justify-center">
           <div className="content">
-            <h1 className={h1}>Hi, I’m Alexa Demie 👋</h1>
+            <h1 className={h1}>I’m Alexa Demie 👋</h1>
             <p className={p}>
               Alexa Demie is an American actress and singer. She is known for
               her role as Madeleine "Maddy" Perez on the HBO teen drama
@@ -63,12 +63,12 @@ export const Hero = () => {
         <div className="littlehero2 sm:flex flex-col sm:justify-center  flex place-content-center  ">
           <div className="absolute z-10  ml-[40px]">
             <img
-              className=" border-solid border-[white] border-[8px] w-[240px] h-[280px]"
+              className=" border-solid border-[white] border-[8px] w-[240px] h-[270px]"
               src="/alexa-demi-euphoria.jpg"
               alt=""
             />
           </div>
-          <div className="w-[260px] h-[280px]  ml-[30px] mt-[25px]  bg-gray-200 "></div>
+          <div className="w-[260px] h-[270px]  ml-[30px] mt-[25px]  bg-gray-200 "></div>
         </div>
       </div>
     </div>

@@ -1,51 +1,40 @@
+import { Button } from "./Button";
 import { useTheme } from "@/context/ThemeContext";
 export const About = () => {
   const { theme } = useTheme();
-  const divClassName =
-    theme == "light"
-      ? "bg-white py-[96px] px-[80px]"
-      : "bg-[#111827] py-[96px] px-[80px]";
-  const pClassName = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
-  const h1 =
-    theme == "light"
-      ? "text-3xl not-italic font-semibold leading-9"
-      : "text-3xl text-[#F9FAFB] not-italic font-semibold leading-9";
-  const headerButtonp =
-    theme == "light"
-      ? "bg-gray-200 flex py-1 px-5 justify-center items-center border rounded-xl"
-      : "bg-[#374151] flex py-1 px-5 justify-center items-center rounded-xl text-[#D1D5DB]";
+  const bgColor =
+    theme == "light" ? "bg-gray-50 text-gray-600" : "bg-gray-900 text-gray-300";
+  const headerColor = theme == "light" ? "text-gray-900" : "text-gray-50 ";
+  const boxClassName = theme == "light" ? "bg-gray-200" : "bg-gray-700";
   return (
-    <div className={divClassName}>
-      <div className="max-w-[1440px] m-auto  container flex flex-col gap-22 items-center ">
-        <div className=" row1 flex flex-col gap-4 items-start rounded-xl mb-[30px]">
-          <p className={headerButtonp}>About me</p>
-        </div>
-
-        <div className="row2 flex items-center gap-12 w-[1216px] h-[770px]">
-          <div className="left flex min-w-96 w-[584px] h-[694px] flex-col items-start text-gray-50">
-            <div className="image absolute z-10 mr-[30px]">
-              <img
-                className="w-[400px] h-[480px] border-solid border-[white] border-[8px]"
-                src="/alexa.webp "
-                alt=""
-                width={400}
-                height={480}
-              />
-            </div>
-            <div className="shadow w-[400px] h-[480px] ml-[-40px] mt-[30px] bg-gray-200"></div>
+    <div className={`py-16 px-4 sm:py-24 sm:px-20 ${bgColor}`}>
+      <div className="flex flex-col items-center justify-center gap-6 sm:max-w-[1280px] sm:m-auto sm:gap-12 sm:px-8">
+        <Button value="About me" />
+        <div className="flex flex-col items-center justify-center sm:flex sm:flex-row sm:gap-12">
+          <div className="mb-12 w-[343px] h-[380px] sm:min-w-[584px] sm:min-h-[694px] relative flex items-center justify-center sm:items-start sm:justify-start">
+            <img
+              className="w-[280px] h-[360px] sm:h-[480px] sm:w-[400px] object-cover z-10 border-8 border-gray-50 sm:ml-[50px]"
+              src="/alexa.webp"
+              alt=""
+            />
+            <div
+              className={`${boxClassName} w-[320px] h-[360px] sm:w-[400px] sm:h-[480px] absolute z-0 top-7 sm:bottom-0 sm:top-12 sm:left-2`}
+            ></div>
           </div>
-          <div className="right flex w-[584px] h-[694px] flex-col items-start gap-6 ">
-            <h1 className={h1}>Curious about me? Here you have it:</h1>
-            <div className="flex flex-col gap-4 items-start">
-              <p className={pClassName}>
+          <div className="flex flex-col gap-6 ">
+            <h3 className={`${headerColor} text-2xl sm:text-3xl font-semibold`}>
+              Curious about me? Here you have it:
+            </h3>
+            <div className="flex flex-col gap-4  ">
+              <p>
                 I'm a passionate, self-proclaimed designer who specializes in
-                full stack development (React.js & Node.js). I am very
+                full stack development React.js & Node. js. I am very
                 enthusiastic about bringing the technical and visual aspects of
                 digital products to life. User experience, pixel perfect design,
                 and writing clear, readable, highly performant code matters to
                 me.
               </p>
-              <p className={pClassName}>
+              <p>
                 I began my journey as a web developer in 2015, and since then,
                 I've continued to grow and evolve as a developer, taking on new
                 challenges and learning the latest technologies along the way.
@@ -54,39 +43,29 @@ export const About = () => {
                 using modern technologies such as Next.js, TypeScript, Nestjs,
                 Tailwindcss, Supabase and much more.
               </p>
-              <p className={pClassName}>
+              <p>
                 I am very much a progressive thinker and enjoy working on
                 products end to end, from ideation all the way to development.
               </p>
-              <p className={pClassName}>
+              <p>
                 When I'm not in full-on developer mode, you can find me hovering
                 around on twitter or on indie hacker, witnessing the journey of
                 early startups or enjoying some free time. You can follow me on
-                Twitter where I share tech-related bites and build in public, or
-                you can follow me on GitHub.
+                where I share tech-related bites and build in public, or you can
+                follow me on .
               </p>
-              <p className={pClassName}>Finally, some quick bits about me.</p>
-              <div className={`${pClassName}  flex gap-[10px] items-start `}>
-                <ul
-                  className={`${pClassName}flex flex-col gap-[10px] items-start list-disc pl-[13px]`}
-                >
-                  <li className="text-base leading-6 w-[287px] h-[24px]">
-                    B.E. in Computer Engineering
-                  </li>
-                  <li className="text-base leading-6 w-[287px] h-[24px]">
-                    Full time freelancer
-                  </li>
-                </ul>
-                <ul className="flex flex-col gap-[10px] items-start list-disc pl-[10px]">
-                  <li className="text-base leading-6 w-[287px] h-[24px]">
-                    Avid learner
-                  </li>
-                  <li className="text-base leading-6 w-[287px] h-[24px]">
-                    Aspiring indie hacker
-                  </li>
-                </ul>
-              </div>
-              <p className={pClassName}>
+              <p>Finally, some quick bits about me.</p>
+              <ul className="list-disc flex flex-row gap-4 sm:gap-8 ml-4">
+                <div className="flex flex-col gap-2.5">
+                  <li>B.E. in Computer Engineering</li>
+                  <li>Full time freelancer</li>
+                </div>
+                <div className="flex flex-col gap-2.5">
+                  <li>Avid learner</li>
+                  <li>Aspiring indie hacker</li>
+                </div>
+              </ul>
+              <p>
                 One last thing, I'm available for freelance work, so feel free
                 to reach out and say hello! I promise I don't bite 😉
               </p>
