@@ -25,14 +25,13 @@ export const Portfolio = () => {
       <section id="section5">
         <Experience />
       </section>
-      {/* <section id="section4">
+      <section id="section4">
         <Work />
-      </section> */}
+      </section>
       <section id="section6">
         <Contant />
       </section>
-      {/* 
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };

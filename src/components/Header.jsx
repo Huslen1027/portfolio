@@ -83,14 +83,16 @@ export function Header() {
             <button
               className={`${
                 theme == "light"
-                  ? "bg-black download flex px-4 py-1 items-center gap-2 justify-center rounded-xl"
+                  ? "bg-black download flex px-4 py-1 items-center gap-2 justify-center rounded-xl "
                   : "bg-white download flex px-4 py-1 items-center gap-2 justify-center rounded-xl"
               }`}
             >
               <p
-                className={`${theme == "light" ? "text-white" : "text-black"}`}
+                className={`${
+                  theme == "light" ? "text-white " : "text-black "
+                }`}
               >
-                Download CV
+                DownloadCV
               </p>
             </button>
           </div>

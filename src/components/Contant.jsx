@@ -50,7 +50,7 @@ export const Contant = () => {
               You may also find me on these platforms!
             </p>
             <div className="flex flex-col justify-center items-center gap-4 ">
-              <div className="flex items-center gap-">
+              <div className="flex items-center gap-3">
                 <div className="">
                   <img src="/github.svg" alt="" />
                 </div>

@@ -7,7 +7,7 @@ export const Skills = () => {
   const { theme } = useTheme();
   const divClassName =
     theme == "light"
-      ? "bg-[#FFF] py-[50px] px-[16px] flex flex-col justify-center items-center "
+      ? "bg-[#FFF] py-[50px] px-[16px] sm:py-[80px] sm:[96px]flex flex-col justify-center items-center "
       : "bg-[#030712] py-[50px] px-[16px] flex flex-col justify-center items-center";
   const pClassName = theme == "light" ? "text-[#4B5563]" : "text-[#D1D5DB]";
   const headerButtonp =
@@ -16,8 +16,8 @@ export const Skills = () => {
       : "bg-[#374151] flex py-1 px-5 justify-center items-center rounded-xl text-[#D1D5DB]";
   return (
     <div className={divClassName}>
-      <div className=" flex flex-col items-start  gap-6 ">
-        <div className="flex flex-col gap-4 ">
+      <div className=" flex flex-col items-start  gap-6  sm:gap-[48px]">
+        <div className="flex flex-col gap-4 items-start">
           <div className="flex flex-col items-center justify-center">
             <button className={headerButtonp}>
               <p className="text-sm leading-5  not-italic">Skills</p>
@@ -31,8 +31,8 @@ export const Skills = () => {
             </p>
           </div>
         </div>
-        <div className=" flex flex-col  items-start justify-center">
-          <div className="flex flex-wrap gap-10 justify-between">
+        <div className=" flex flex-col  items-start justify-center ">
+          <div className="flex flex-wrap gap-10 justify-between ">
             {skillsIcon1.map((element) => (
               <div className="flex flex-col justify-between items-center gap-1 ">
                 {element.icon}
