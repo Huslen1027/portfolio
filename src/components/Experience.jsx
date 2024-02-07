@@ -22,7 +22,7 @@ export const Experience = () => {
             Here is a quick summary of my most recent experiences:
           </p>
         </div>
-        {ExperienceData.map((data) => (
+        {ExperienceData.map((data, index) => (
           <div
             className={`${cardBg} flex flex-col justify-between gap-4 p-8  border-0	 rounded-lg shadow-md sm:p-8 sm:flex-row sm:gap-12 sm:w-[1000px]`}
           >

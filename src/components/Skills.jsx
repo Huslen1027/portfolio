@@ -1,7 +1,5 @@
 import React from "react";
 import { skillsIcon1 } from "@/utils/dummyData";
-import { skillsIcon2 } from "@/utils/dummyData";
-import Image from "next/image";
 import { useTheme } from "@/context/ThemeContext";
 import { Button } from "./Button";
 export const Skills = () => {
@@ -11,10 +9,7 @@ export const Skills = () => {
       ? "bg-[#FFF] py-[50px] px-[16px] sm:py-[80px] sm:[96px]flex flex-col justify-center items-center "
       : "bg-[#030712] py-[50px] px-[16px] flex flex-col justify-center items-center";
   const pClassName = theme == "light" ? "text-[#4B5563]" : "text-[#D1D5DB]";
-  const headerButtonp =
-    theme == "light"
-      ? "bg-gray-200 flex py-1 px-5 justify-center items-center border rounded-xl"
-      : "bg-[#374151] flex py-1 px-5 justify-center items-center rounded-xl text-[#D1D5DB]";
+
   return (
     <div className={divClassName}>
       <div className=" flex flex-col  gap-6  sm:gap-[48px]">

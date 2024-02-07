@@ -9,7 +9,7 @@ import {
   Footer,
 } from "@/components/index";
 
-export const Portfolio = () => {
+const Portfolio = () => {
   return (
     <div className="">
       <section id="section1">
