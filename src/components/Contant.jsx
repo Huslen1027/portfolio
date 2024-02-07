@@ -1,20 +1,26 @@
-import { useTheme } from "@/context";
+import { useTheme } from "@/context/ThemeContext";
 export const Contant = () => {
   const { theme } = useTheme();
   const divClassName =
     theme == "light"
       ? "bg-white py-[96px] px-[80px]"
-      : "bg-black py-[96px] px-[80px]";
-  const pClassName = theme == "light" ? "text-white" : "text-black";
+      : "bg-[#030712] py-[96px] px-[80px]";
+  const buttonClassName =
+    theme == "light"
+      ? "bg-[#E5E7EB] text-[#4B5563]"
+      : "bg-[#374151] text-[#D1D5D]";
+  const gmail = theme == "light" ? "bg-[#111827]" : "bg-[#F9FAFB]";
   return (
-    <div className="contant flex px-4 py-16 sm:px-[80px] sm:py-[96px] flex-col items-center justify-center bg-[#FFF]">
+    <div
+      className={`${divClassName}contant flex px-4 py-16 sm:px-[80px] sm:py-[96px] flex-col items-center justify-center `}
+    >
       <div className=" gap-6   flex justify-center flex-col sm:gap-12 items-center ">
         <div className="header flex flex-col gap-4 ">
           <div className="top flex flex-col justify-center items-center">
-            <button className="flex py-1 px-5 justify-center items-center rounded-xl bg-gray-200">
-              <p className="text-sm leading-5 text-gray-600 not-italic">
-                Get in touch
-              </p>
+            <button
+              className={`${buttonClassName}flex py-1 px-5 justify-center items-center rounded-xl`}
+            >
+              get in touch
             </button>
           </div>
           <div className="bottom flex flex-col items-center justify-center ">
@@ -27,7 +33,9 @@ export const Contant = () => {
         <div className="flex flex-col gap-4 items-center justify-center">
           <div className="gmail flex justify-center gap-5 items-center">
             <img className=" w-6 h-6 sm:w-8 sm:h-8" src="/Gmail.png" alt="" />
-            <p className=" text-lg sm:text-3xl not-italic font-semibold leading-10 text-center text-gray-900">
+            <p
+              className={`${gmail}text-lg sm:text-3xl not-italic font-semibold leading-10 text-center `}
+            >
               hvslenhvslen566@gmail.com
             </p>
             <div>

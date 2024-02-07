@@ -14,8 +14,10 @@ export const Work = () => {
     <div className={bgColor}>
       <div className="sm:max-w-[1440px] sm:m-auto px-4 py-16  sm:px-20 sm:py-24">
         <div className="sm:px-8  flex flex-col justify-center gap-6 sm:gap-12 ">
-          <div className="text-center ">
+          <div className="flex justify-center">
             <Button value="Work" />
+          </div>
+          <div className="text-center">
             <p className="text-lg mt-4">
               Some of the noteworthy projects I have built:
             </p>
